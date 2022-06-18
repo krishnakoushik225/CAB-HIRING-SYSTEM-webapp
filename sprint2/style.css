@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.heading{
+  display: flex;
+  justify-content: center;
+}
+h2{
+  width: 80vw;
+  height: 10vh;
+  border-radius: 10px;
+  display:flex;
+  justify-content:center;
+  margin-top: 15px;
+  
+  font-size: 30px;
+  text-decoration: underline;
+}
+.form{
+  background-color: green;
+  width: 95vw;
+  height: 470vh;
+  margin-top: 20px;
+  margin-left: 25px;
+  margin-bottom:20px;
+  border-radius: 50px;
+  padding-top: 1px;
+}
+fieldset{
+  border: 2px solid;
+  border-color: white;
+  margin: 35px;
+  padding: 145px;
+  border-radius: 10px;
+}
+legend{
+  border: 2px solid;
+  background-color: lightgreen;
+  color: white;
+  padding: 10px;
+  font-size: larger;
+}
+.topnav {
+  overflow: hidden;
+  background-color: brown;
+}
+.topnav1 {
+  overflow: hidden;
+  background-color: blue;
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 30px 56px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: brown;
+}
+
+.topnav a.active {
+  background-color: brown;
+  color: white;
+}
+
+.topnav1 a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 30px 56px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav1 a:hover {
+  background-color: #ddd;
+  color: yellow;
+}
+
+.topnav1 a.active {
+  background-color: yellow;
+  color: white;
+}

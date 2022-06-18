@@ -1,0 +1,124 @@
+<html>
+    
+    <head>
+        <title>Document</title>
+        
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <div class="topnav">
+        
+        <a href="application1.html">Status</a>
+        <a href="application1.html">Contact</a>
+        <a href="application1.html">About</a>
+      </div>
+
+    <body >
+        <center><div class="heading">
+            <h2 style="
+            width: 80vw;
+            height: 10vh;
+            border-radius: 10px;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            margin-top: 15px;
+            color: black;
+            
+            font-size: 30px;
+            text-decoration: underline;">APPLICATION FORM FOR JOB RECRUITMENT</h2></center>
+            
+
+        
+        <form style="background-color: rgba(192,192,192,0.7); width: 95vw; height: 470vh; margin-top: 20px; margin-left: 25px; margin-bottom: 20px; border-radius: 5px; padding-top: 1px;" action="http://localhost/cab_php/se/application1.html" method="post">
+            <fieldset style="border: 2px solid; border-color: rgb(255,255,255); margin: 35px; padding: 15px; border-radius: 10px;">
+                <legend style="border: 2px solid oldlace; background-color: teal; margin: 35px; color: white; padding: 10px; text-transform: uppercase; font-size: larger; font-family: Arial, Helvetica, sans-serif; border-radius: 25px;">Personal Information:</legend>
+                <label for="text" class="clabel" style="font-family: Arial, Helvetica, sans-serif; white-space: pre; font-weight: bolder;">Candidate Name:</label>
+                <input type="text" name="fname" placeholder="First name" required size="40" class="cinput" style="padding: 10px;margin: 5px;text-transform: uppercase;border-radius: 4px; border: none;">
+                <input type="text" name="mname" placeholder="Middle name" required size="40" class="cinput" style="padding: 10px;margin: 5px;text-transform: uppercase;border-radius: 4px; border: none;">
+                <input type="text" name="lname" placeholder="Last name" required size="40" class="cinput" style="padding: 10px;margin: 5px;text-transform: uppercase;border-radius: 4px; border: none;"><hr>
+                
+                <label for="text" class="clabel" style="font-family: Arial, Helvetica, sans-serif; white-space: pre; font-weight: bolder;">Father's Name:</label>
+                <input type="text" name="fname" placeholder="First name" required size="40" class="cinput" style="padding: 10px;margin: 5px;text-transform: uppercase;border-radius: 4px; border: none;">
+                <input type="text" name="mname" placeholder="Middle name" required size="40" class="cinput" style="padding: 10px;margin: 5px;text-transform: uppercase;border-radius: 4px; border: none;">
+                <input type="text" name="lname" placeholder="Last name" required size="40" class="cinput" style="padding: 10px;margin: 5px;text-transform: uppercase;border-radius: 4px; border: none;"><hr>
+                
+                <label for="text" class="clabel" style="font-family: Arial, Helvetica, sans-serif; white-space: pre; font-weight: bolder;">Mother's Name:</label>
+                <input type="text" name="fname" placeholder="First name" required size="40" class="cinput" style="padding: 10px;margin: 5px;text-transform: uppercase;border-radius: 4px; border: none;">
+                <input type="text" name="mname" placeholder="Middle name" required size="40" class="cinput" style="padding: 10px;margin: 5px;text-transform: uppercase;border-radius: 4px; border: none;">
+                <input type="text" name="lname" placeholder="Last name" required size="40" class="cinput" style="padding: 10px;margin: 5px;text-transform: uppercase;border-radius: 4px; border: none;"><hr>
+                <label for="text" class="clabel" style="font-family: Arial, Helvetica, sans-serif; white-space: pre; font-weight: bolder;">Gender:</label>
+                <input type="radio" checked="checked" name="gender" value="Male" class="gender_person" style="margin: 25px;">Male
+                <input type="radio" checked="checked" name="gender" value="Female" class="gender_person" style="margin: 25px;">Female
+                <input type="radio" checked="checked" name="gender" value="Other" class="gender_person" style="margin: 25px;">Other<hr>
+                <label for="text" class="clabel" style="font-family: Arial, Helvetica, sans-serif; white-space: pre; font-weight: bolder;">Nationality:</label>
+                <select name="nationality" class="nationality_person" style="width: 200px; border-radius: 4px; text-transform: uppercase; padding: 2px;"><option value="nationality">Indian</option>
+                    <option value="nationality">Other</option></select><hr>
+                <label for="text" class="clabel" style="font-family: Arial, Helvetica, sans-serif; white-space: pre; font-weight: bolder;">Date of Birth:</label>
+                <input type="date" name="DOB" class="required" style="width: 200px; margin: 20px 100px 20px 29px; border-radius: 4px;padding: 2px;"><hr>
+                <label for="text" class="clabel" style="font-family: Arial, Helvetica, sans-serif; white-space: pre; font-weight: bolder;">Mobile Number:</label>
+                
+                <input type="tel" name="mobile" maxlength="10" class="mobile" required style="width: 200px; font-size: larger; padding: 3px; border-radius: 4px;">
+                <label for="text" class="clabel" style="font-family: Arial, Helvetica, sans-serif; white-space: pre; font-weight: bolder;">Email Id:</label>
+                <input type="email" name="email" required class="email_id" style="width: 200px; font-size: larger; padding: 3px; border-radius:4px">
+            </fieldset>
+            <fieldset style="border: 2px solid; border-color: rgb(255,255,255); margin: 35px; padding: 15px; border-radius: 10px;">
+                <legend style="border: 2px solid oldlace; background-color: teal; margin: 35px; color: white; padding: 10px; text-transform: uppercase; font-size: larger; font-family: Arial, Helvetica, sans-serif; border-radius: 25px;">ADDRESS:</legend>
+                <fieldset style="border: 2px solid; border-color: rgb(255,255,255); margin: 35px; padding: 15px; border-radius: 10px;">
+                    <legend class="permanent_address" style="border: 2px solid oldlace; background-color: teal; margin: 35px; color: white; padding: 10px; text-transform: uppercase; font-size: larger; font-family: Arial, Helvetica, sans-serif; border-radius: 25px;">PERMANENT ADDRESS:</legend>
+                    
+                    <label for="text" class="clabel" style="font-family: Arial, Helvetica, sans-serif; white-space: pre; font-weight: bolder;">Address:</label>
+                    <input type="text" name="address" placeholder="Address line 1" required class="add_input" style="padding: 10px;margin: 5px;text-transform: uppercase;border-radius: 4px; border: none;">
+                    <input type="text" name="address" placeholder="Address line 2" required class="add_input" style="padding: 10px;margin: 5px;text-transform: uppercase;border-radius: 4px; border: none;"><hr>
+                    <label for="text" class="clabel" style="font-family: Arial, Helvetica, sans-serif; white-space: pre; font-weight: bolder;">CITY/TOWN:</label>
+                    <input type="text" name="address" placeholder="Enter City/Town" required class="add_input" style="padding: 10px;margin: 5px;text-transform: uppercase;border-radius: 4px; border: none;"><hr>
+                    <label for="text" class="clabel" style="font-family: Arial, Helvetica, sans-serif; white-space: pre; font-weight: bolder;">DISTRICT:</label>
+                    <input type="text" name="address" placeholder="Enter District" required class="add_input" style="padding: 10px;margin: 5px;text-transform: uppercase;border-radius: 4px; border: none;"><hr>
+                    <label for="text" class="clabel" style="font-family: Arial, Helvetica, sans-serif; white-space: pre; font-weight: bolder;">PIN CODE:</label>
+                    <input type="PIN"  maxlenth="6" name="address" placeholder="Enter Pin Code" required class="add_input" style="padding: 10px;margin: 5px;text-transform: uppercase;border-radius: 4px; border: none;"><hr>
+                    <label for="text" class="clabel" style="font-family: Arial, Helvetica, sans-serif; white-space: pre; font-weight: bolder;">STATE :</label>
+                    <input type="text" name="address" placeholder="Enter State" required class="add_input" style="padding: 10px;margin: 5px;text-transform: uppercase;border-radius: 4px; border: none;"><hr>
+                </fieldset>
+                <label for="text" class="label_checkbox" style="font-family: Arial, Helvetica, sans-serif; white-space: pre; font-weight: bolder;"></label>
+                <input type="checkbox" name="checked" class="add_check">                                                 If permanent address is as same as temporary address
+                <fieldset style="border: 2px solid; border-color: rgb(255,255,255); margin: 35px; padding: 15px; border-radius: 10px;">
+                    <legend class="Permanent_address" style="border: 2px solid oldlace; background-color: teal; margin: 35px; color: white; padding: 10px; text-transform: uppercase; font-size: larger; font-family: Arial, Helvetica, sans-serif; border-radius: 25px;">Current Address:</legend>
+                    <label for="text" class="clabel" style="font-family: Arial, Helvetica, sans-serif; white-space: pre; font-weight: bolder;">Address:</label>
+                    <input type="text" name="address" placeholder="Address line 1" required class="add_input" style="padding: 10px;margin: 5px;text-transform: uppercase;border-radius: 4px; border: none;">
+                    <input type="text" name="address" placeholder="Address line 2" required class="add_input" style="padding: 10px;margin: 5px;text-transform: uppercase;border-radius: 4px; border: none;"><hr>
+                    <label for="text" class="clabel" style="font-family: Arial, Helvetica, sans-serif; white-space: pre; font-weight: bolder;" style="padding: 10px;margin: 5px;text-transform: uppercase;border-radius: 4px; border: none;">CITY/TOWN:</label>
+                    <input type="text" name="address" placeholder="Enter City/Town" required class="add_input" style="padding: 10px;margin: 5px;text-transform: uppercase;border-radius: 4px; border: none;"><hr>
+                    <label for="text" class="clabel" style="font-family: Arial, Helvetica, sans-serif; white-space: pre; font-weight: bolder;" style="padding: 10px;margin: 5px;text-transform: uppercase;border-radius: 4px; border: none;">DISTRICT:</label>
+                    <input type="text" name="address" placeholder="Enter District" required class="add_input" style="padding: 10px;margin: 5px;text-transform: uppercase;border-radius: 4px; border: none;"><hr>
+                    <label for="text" class="clabel" style="font-family: Arial, Helvetica, sans-serif; white-space: pre; font-weight: bolder;" style="padding: 10px;margin: 5px;text-transform: uppercase;border-radius: 4px; border: none;">PIN CODE:</label>
+                    <input type="PIN"  maxlenth="6" name="address" placeholder="Enter Pin Code" required class="add_input" style="padding: 10px;margin: 5px;text-transform: uppercase;border-radius: 4px; border: none;"><hr>
+                    <label for="text" class="clabel" style="font-family: Arial, Helvetica, sans-serif; white-space: pre; font-weight: bolder;" style="padding: 10px;margin: 5px;text-transform: uppercase;border-radius: 4px; border: none;">STATE :</label>
+                    <input type="text" name="address" placeholder="Enter State" required class="add_input" style="padding: 10px;margin: 5px;text-transform: uppercase;border-radius: 4px; border: none;"><hr>
+                </fieldset>
+            </fieldset>
+            <fieldset style="border: 2px solid; border-color: rgb(255,255,255); margin: 35px; padding: 15px; border-radius: 10px;">
+                <legend style="border: 2px solid oldlace; background-color: teal; margin: 35px; color: white; padding: 10px; text-transform: uppercase; font-size: larger; font-family: Arial, Helvetica, sans-serif; border-radius: 25px;">DOCUMENTS UPLOAD:</legend>
+                <label for="text" class="DU_label" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; margin-right: 80px; margin-left: 30px; white-space: pre;">Passport Size photo                                                                                                        :</label>
+                <input type="file" class="DU_input" style="margin: 10px; cursor: pointer;" required><hr>
+                <label for="text" class="DU_label" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; margin-right: 80px; margin-left: 30px; white-space: pre;">Signature                                                                                                                          :</label>
+                <input type="file" class="DU_input" style="margin: 10px; cursor: pointer;" required><hr>
+                <label for="text" class="DU_label" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; margin-right: 80px; margin-left: 30px; white-space: pre;">Identity proof(Aadhar/PAN)                                                                                             :</label>
+                <input type="file" class="DU_input" style="margin: 10px; cursor: pointer;" required><hr>
+                <label for="text" class="DU_label" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; margin-right: 80px; margin-left: 30px; white-space: pre;">Driving Licence                                                                                                                 :</label>
+                <input type="file" class="DU_input" required><hr>
+                
+            </fieldset>
+            <fieldset style="border: 2px solid; border-color: rgb(255,255,255); margin: 35px; padding: 15px; border-radius: 10px;">
+                <legend style="border: 2px solid oldlace; background-color: teal; margin: 35px; color: white; padding: 10px; text-transform: uppercase; font-size: larger; font-family: Arial, Helvetica, sans-serif; border-radius: 25px;">SELF DECLARATION:</legend>
+                <input type="checkbox" name="checked" value="checked" required class="termcheckbox" style="margin-left: 50px;">
+                <label for="text" class="termfillup" style="font-family: Arial, Helvetica, sans-serif; display: inline-block; text-align: justify; margin: -18px 60px 0px 70px" >I here by declare that all the submitted information is true to my knowledge and if given the job, I will abide by the policies of company and I understand that I must face any legal consequences in case of misrepresentation.</h3></label>
+            </fieldset>
+            <div class="bttndiv" style="margin-top: 80px; display: flex; flex-direction: row; justify-content: space-around;">
+                <button class="bttns" type="back" value="back" style="width: 110px; height: 40px; cursor: pointer; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-transform: uppercase; border-radius: 35px; background-color: #d11141; font-size: 18px; color:white">Back</button>
+                <button class="bttns" type="submit" value="submit" style="width: 110px; height: 40px; cursor: pointer; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-transform: uppercase; border-radius: 35px; background-color: #d11141; font-size: 18px; color:white" >Submit</button>
+                <button class="bttns" type="reset" value="reset" style="width: 110px; height: 40px; cursor: pointer; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-transform: uppercase; border-radius: 35px; background-color: #d11141; font-size: 18px; color:white">Reset</button>
+            </div>
+        </form>
+        </div>
+    </body>
+</html>

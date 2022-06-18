@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+body{
+    background: #f6f5f7;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+	font-weight: bold;
+	margin: 0;
+}
+
+@keyframes an1{
+    from {background-color: #926AA6;}
+    to {background-color:#45B8AC}
+}
+
+@keyframes an2{
+    from {background-color: #A0DAA9;}
+    to {background-color:#9BB784}
+}
+
+@keyframes an3{
+    from {background-color: #6B5B95;}
+    to {background-color:#7FCDCD}
+}
+
+@keyframes an4{
+    from {background-color: #92A8D1;}
+    to {background-color:#A0DAA9}
+}
