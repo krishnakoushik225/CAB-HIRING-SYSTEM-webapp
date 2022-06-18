@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+
+}
+
+
+</style>
+<script>
+function validate(){
+if(document.book.mob.value == ""||
+isNaN(document.book.mob.value)||
+document.book.mob.value.length!=10){
+alert("Please enter a valid phone number");
+document.book.mob.focus();
+return false;
+}
+
+
+var e = document.book.eid.value;
+var atposition=e.indexOf("@");  
+var dotposition=e.lastIndexOf(".");  
+if (atposition<1 || dotposition<atposition+2 || dotposition+2>=e.length){  
+  alert("Please enter a valid e-mail address");  
+  return false;  
+  }  
+}
+
+var myInput = document.getElementById("psw");
+var letter = document.getElementById("letter");
+var capital = document.getElementById("capital");
+var number = document.getElementById("number");
+var length = document.getElementById("length");
+
+myInput.onfocus = function() {
+  document.getElementById("message").style.display = "block";
+}
+
+myInput.onblur = function() {
+  document.getElementById("message").style.display = "none";
+}
+
+myInput.onkeyup = function() {
+
+  var lowerCaseLetters = /[a-z]/g;
+  if(myInput.value.match(lowerCaseLetters)) {  
+    letter.classList.remove("invalid");
+    letter.classList.add("valid");
+  } else {
+    letter.classList.remove("valid");
+    letter.classList.add("invalid");
+  }
+  
+  var upperCaseLetters = /[A-Z]/g;
+  if(myInput.value.match(upperCaseLetters)) {  
+    capital.classList.remove("invalid");
+    capital.classList.add("valid");
+  } else {
+    capital.classList.remove("valid");
+    capital.classList.add("invalid");
+  }
+
+  var numbers = /[0-9]/g;
+  if(myInput.value.match(numbers)) {  
+    number.classList.remove("invalid");
+    number.classList.add("valid");
+  } else {
+    number.classList.remove("valid");
+    number.classList.add("invalid");
+  }
+  
+  if(myInput.value.length >= 8) {
+    length.classList.remove("invalid");
+    length.classList.add("valid");
+  } else {
+    length.classList.remove("valid");
+    length.classList.add("invalid");
+  }
+}
+</script>
+</head>
+<body">
+    <h1 style="font: caption; font-size: xx-large; text-align: center; color: black; margin-top: 100px;">Complaint form</h1>
+    <div style="background-image: url(dbg.jpg); background-size: cover; background-repeat: no-repeat; width: 70%; height: 680px;"><br>
+    <form name="book" action="subm.html" onsubmit="return(validate());">
+    
+    <h1 style="font: caption; font-size: medium; color: black; text-align: left; margin-left: 450px;">Name: <input type="text" name="na" style="float: left; margin-left: 450px;" required><br></h1>
+    <h1 style="font: caption; font-size: medium; color: black; text-align: left; margin-left: 450px;">Registered Mobile number: <input type="text" name="mob" style="float: left; margin-left: 450px;" id="mob" required><br></h1>
+    <h1 style="font: caption; font-size: medium; color: black; text-align: left; margin-left: 450px;">Registered Email id: <input type="text" name="eid" style="float: left; margin-left: 450px;" required><br></h1>
+    <h1 style="font: caption; font-size: medium; color: black; text-align: left; margin-left: 450px;">Type of Inconvenience:</h1>
+    <select name="special" style="float: left; margin-left: 450px;" required>
+    <option value="Cardiologist">Payment Issue</option>
+    <option value="dentist">Rude behavior of Driver</option>
+    <option value="Dermatologist">Vehicle Issues</option>
+    <option value="gynic">Other</option>
+    </select><br>
+    <h1 style="font-size: medium; font: caption; color: black; text-align: left; margin-left: 450px;">Write your complaint in 100-200 words</h1>
+    <textarea rows="4" cols="50" name="comment" style="float: left; margin-left: 550px;" required placeholder="description"></textarea><br><br><br><br>
+    
+    <br>
+    <input type="submit" value="submit" style="float: left; margin-left: 700px;"><br>
+    </form>
+    <div id="message">
+        <h3>Password must contain the following:</h3>
+        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+        <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+        <p id="number" class="invalid">A <b>number</b></p>
+        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+      </div>
+    
+</div>
+</body>
+</html>
